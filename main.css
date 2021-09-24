@@ -1,0 +1,83 @@
+body {
+  background-image: url(/images/träpanel.jpg);
+  border: 1px solid black;
+
+  margin: 0%;
+}
+.wrapper {
+  display: grid;
+  grid-template-rows: 10px 125px 5px 160px 5px 160px 5px 125px 10px;
+  grid-template-columns: 20px 1fr 20px;
+}
+section {
+  border: 1px solid black;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: rgb(233, 174, 96);
+}
+article {
+  border: 1px solid black;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: burlywood;
+}
+main {
+  border: 1px solid black;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: burlywood;
+}
+#section-two {
+  border: 1px solid black;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: rgb(233, 174, 96);
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    display: grid;
+    grid-template-rows: 50px 80vh 50px;
+    grid-template-columns: 50px 180px 30px 250px 30px 250px 30px 180px 50px;
+    justify-content: center;
+  }
+  section {
+    border: 1px solid black;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: rgb(233, 174, 96);
+  }
+  article {
+    border: 1px solid black;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: burlywood;
+  }
+  main {
+    border: 1px solid black;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: burlywood;
+  }
+  #section-two {
+    border: 1px solid black;
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: rgb(233, 174, 96);
+  }
+}
